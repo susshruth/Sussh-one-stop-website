@@ -18,7 +18,10 @@ import * as ReactBootStrap from "react-bootstrap";
 
 
 function App() {
-  alert("please use hand sanitizer, wear masks, stay home to be safe");
+  const [mysearch, setMysearch] = useState('');
+  const handleChange1 = e => {
+    setMysearch(e.target.value);
+  } ;
   return (
     <div>
     
@@ -42,7 +45,7 @@ function App() {
       {/* <ReactBootStrap.Nav.Link href="/dropValFromJS">DropDown val from JS App | </ReactBootStrap.Nav.Link> */}
       {/* <ReactBootStrap.Nav.Link href="/car">Car | </ReactBootStrap.Nav.Link> */}
       <ReactBootStrap.Nav.Link href="/youtube">Youtube | </ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link href="http://cabaini.com">Engineering | </ReactBootStrap.Nav.Link>
+      {/* <ReactBootStrap.Nav.Link href="http://cabaini.com">Engineering | </ReactBootStrap.Nav.Link> */}
       <ReactBootStrap.Nav.Link href="/country-state-city-dropdown">Covid dropdown | </ReactBootStrap.Nav.Link>
       <ReactBootStrap.Nav.Link href="/payment">Payment | </ReactBootStrap.Nav.Link>
       <ReactBootStrap.Nav.Link href="/car">Car | </ReactBootStrap.Nav.Link>
@@ -50,9 +53,11 @@ function App() {
 
       </ReactBootStrap.Nav>
       <ReactBootStrap.Nav.Link href="/login">Login</ReactBootStrap.Nav.Link>
-        <ReactBootStrap.Nav.Link eventKey={2} href="/logout">
-          Logout
-        </ReactBootStrap.Nav.Link>
+        <ReactBootStrap.Nav.Link eventKey={2} href="/logout">Logout</ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Form inline>
+        <ReactBootStrap.FormControl type="text" href="/logout" value={mysearch} onChange={handleChange1}placeholder="Search" className="mr-sm-2" />
+        <ReactBootStrap.Button variant="outline-light">Search</ReactBootStrap.Button>
+    </ReactBootStrap.Form>
     </ReactBootStrap.Navbar.Collapse>
     </ReactBootStrap.Navbar>
 
