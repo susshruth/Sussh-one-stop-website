@@ -15,6 +15,7 @@ import Book from './library';
 import Covidfetch from './covidfetch';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import * as ReactBootStrap from "react-bootstrap";
+import Spinner from 'react-bootstrap/Spinner';
 
 
 function App() {
@@ -43,19 +44,23 @@ function App() {
       <ReactBootStrap.Nav.Link href="/youtube">Youtube | </ReactBootStrap.Nav.Link>
       {/* <ReactBootStrap.Nav.Link href="http://cabaini.com">Engineering | </ReactBootStrap.Nav.Link> */}
       <ReactBootStrap.Nav.Link href="/country-state-city-dropdown">Covid dropdown | </ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link href="/payment">Payment | </ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link href="/car">Car | </ReactBootStrap.Nav.Link>
+      <ReactBootStrap.NavDropdown title="In Progress" id="basic-nav-dropdown">
+        <ReactBootStrap.NavDropdown.Item href="/payment">Payment | </ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/car">Car | </ReactBootStrap.NavDropdown.Item>
+      </ReactBootStrap.NavDropdown>
 
 
       </ReactBootStrap.Nav>
       <ReactBootStrap.Nav.Link href="/login">Login</ReactBootStrap.Nav.Link>
         <ReactBootStrap.Nav.Link eventKey={2} href="/logout">Logout</ReactBootStrap.Nav.Link>
       <ReactBootStrap.Form inline>
-        <ReactBootStrap.FormControl type="text" placeholder="Search" className="mr-sm-2" />
+        <ReactBootStrap.FormControl type="url" placeholder="Search" className="mr-sm-2" />
         <ReactBootStrap.Button variant="outline-light">Search</ReactBootStrap.Button>
     </ReactBootStrap.Form>
     </ReactBootStrap.Navbar.Collapse>
     </ReactBootStrap.Navbar>
+
+    <Spinner animation="border" variant="primary" />
 
     
     <Router>
