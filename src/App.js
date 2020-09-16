@@ -45,8 +45,8 @@ function App() {
       {/* <ReactBootStrap.Nav.Link href="http://cabaini.com">Engineering | </ReactBootStrap.Nav.Link> */}
       <ReactBootStrap.Nav.Link href="/country-state-city-dropdown">Covid dropdown | </ReactBootStrap.Nav.Link>
       <ReactBootStrap.NavDropdown title="In Progress" id="basic-nav-dropdown">
-        <ReactBootStrap.NavDropdown.Item href="/payment">Payment | </ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="/car">Car | </ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item bg="dark" variant="dark" href="/payment">Payment | </ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item bg="dark" variant="dark" href="/car">Car | </ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
 
 
