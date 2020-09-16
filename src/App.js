@@ -18,10 +18,6 @@ import * as ReactBootStrap from "react-bootstrap";
 
 
 function App() {
-  const [mysearch, setMysearch] = useState('');
-  const handleChange1 = e => {
-    setMysearch(e.target.value);
-  } ;
   return (
     <div>
     
@@ -55,7 +51,7 @@ function App() {
       <ReactBootStrap.Nav.Link href="/login">Login</ReactBootStrap.Nav.Link>
         <ReactBootStrap.Nav.Link eventKey={2} href="/logout">Logout</ReactBootStrap.Nav.Link>
       <ReactBootStrap.Form inline>
-        <ReactBootStrap.FormControl type="text" href="/logout" value={mysearch} onChange={handleChange1}placeholder="Search" className="mr-sm-2" />
+        <ReactBootStrap.FormControl type="text" placeholder="Search" className="mr-sm-2" />
         <ReactBootStrap.Button variant="outline-light">Search</ReactBootStrap.Button>
     </ReactBootStrap.Form>
     </ReactBootStrap.Navbar.Collapse>
