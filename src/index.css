@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aqua;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 
+  INFO.JS
+*/
+
+#main3{
+  background-color: white;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-width: thin;
+  border-color: black;
+  border-style: solid;
+}
+#link3{
+  margin-left: 40%;
+}
+#common{
+  margin-left: 15%;
+}
+#Fir{
+  margin-left: 6%;
+}
+#Las{
+  margin-left: 6%;
+}
+#Age{
+  margin-left: 15%;
+}
+#ema{
+  margin-left: 13%;
+}
+#pho{
+  margin-left: 11%;
+}
+#Apt{
+  margin-left: 1%;
+}
+
+#select{
+  margin-left: 11%;
+  max-width: 40%;
+}
+#city{
+  margin-left: 11%;
+  max-width: 70px;
+}
+
+#street{
+  margin-left: 11%;
+}
+#city{
+  margin-left: 11%;
+  max-width: 70px;
+}
+#state{
+  margin-left: 12px;
+  max-width: 70px;
+}
+#zipcode{
+  margin-left: 11%;
+  max-width: 60px;
+
+}
+#reset{
+  margin-left: 5%;
+}
+#submitform1{
+  margin-left: 35%;
+  background-color: rgb(0, 170, 255);
+}
+
+  /* height: 60%;
+  border: none;
+  background-color: '#labc9c';
+  /* paddingVertical: 10; */
+  /* justify-content: 'center'; */
+  /* max-width: 70px; */ 
+  /* #resetform{
+  height: 60;
+  border: none;
+  border-radius: 50;
+  background-color: '#labc9c';
+  paddingVertical: 10,
+  justify-content: 'center';
+  max-width: 70px;
+} */
+
+
+
+/* 
+  LOGIN.JS
+*/
+
+
+#main2{
+  background-color: white;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-width: thin;
+  border-color: black;
+  border-style: solid;
+}
+#link2{
+  margin-left: 27%;
+  background-color: rgb(0, 170, 255);
+}
+#Use{
+  margin-left: 37%;
+}
+
+#Useinput{
+  margin-left: 13%;
+}
+#pas{
+  margin-left: 37%;
+}
+#pasinput{
+  margin-left: 13%;
+}
+#submitform{
+  margin-left: 40%;
+  background-color: rgb(0, 170, 255);
+}

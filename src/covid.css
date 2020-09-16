@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aqua;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#main4{
+  background-color: white;
+  margin-left: 30%;
+  margin-right: 30%;
+  /* margin-bottom: 40%; */
+}
+#covid{
+  background-color: seashell;
+}
+  #stateview{
+    background-color: greenyellow;
+  }
+  #select1{
+    background-color: greenyellow;
+    /* padding-right: %; */
+  }
+  #tablecover{
+    /* background-color: greenyellow; */
+    margin: 1%;
+    min-width: 40%;
+    
+    /* background-color: khaki; */
+    padding-left: 38%;
+  }
+  #selectcontainer{
+    background-color: rgb(255, 119, 119);
+    /* min-width: 0%; */
+  }
+  #Confirmed-th{
+    padding-right: 1%;
+  }  
+  #Deaths-th{
+    /* padding-left: 15%; */
+    text-align: center;
+  }
+  #result{
+    /* text-align: center; */
+    padding-left: 38%;
+  }
+  #confirmed-display{
+    text-align: center;
+  }
+  #recovered-display{
+    padding-left: 6%;
+    text-align: center;
+  }  
+  #deaths-display{
+    padding-left: 14%;
+    text-align: center;
+  }
+  #tr-cases{
+    /* min-width: 80%; */
+    background-color: lightgray;
+    padding-left: 19%;
+    /* margin-left: 18%; */
+    /* margin-right: 80%; */
+  }
+  
+  #btn{
+    background-color: lightgreen;
+    margin-left: 45%;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  #province{
+    background-color: lightgreen;
+    margin-left: 12%;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  #countryselector{
+    margin-left:29%;
+    max-width: 140px;
+    min-width: 140px;
+    min-height: 45px;
+    border: none;
+    background-color: aquamarine;
+  }
+  #stateselector{
+    margin-left: 29%;
+    max-width: 140px;
+    min-width: 140px;
+    min-height: 45px;
+    border: none;
+    /* border-radius: 15/%; */
+    background-color: aquamarine;
+  }
+
+
+  #display{
+    margin-left: 35%;
+  }
+  #form1{
+    background-color: rgb(144, 236, 172); 
+  }

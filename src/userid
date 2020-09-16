@@ -1,0 +1,24 @@
+        return (
+            <div id="form"> 
+            <label><strong>Please enter your id </strong></label><br/><br/>
+
+            <label><strong>First name :</strong></label>
+            <input id="Fir"name="first" placeholder="First name" ref={register({ required : "this is a required field" })}/><br/>
+
+
+            <label><strong>Last name :</strong></label>
+            <input id="Las"name="last" placeholder="Last name"></input><br/>
+
+
+            <label><strong>Age :</strong></label>
+            <input id="Age"name="age" type="number" placeholder="Age" ref={register({ required : "this is a required field" })}></input><br/>
+
+
+            <label><strong>Email :</strong></label>
+            <input id="ema"name="email" placeholder="Email" ref={register({ required : "this is a required field" })}></input><br/>
+
+
+            <label><strong>Phone :</strong></label>
+                <input id="pho"name="phone" placeholder="Phone" ref={register({ maxLength: 6 ,required : "this is a required field" })}></input><br/><br/>
+            </div>
+        )
