@@ -44,6 +44,10 @@ function App() {
       <ReactBootStrap.Nav.Link href="/youtube">Youtube | </ReactBootStrap.Nav.Link>
       {/* <ReactBootStrap.Nav.Link href="http://cabaini.com">Engineering | </ReactBootStrap.Nav.Link> */}
       <ReactBootStrap.Nav.Link href="/country-state-city-dropdown">Covid dropdown | </ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Button variant="primary" disabled>
+        <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true"/>
+        <span className="sr-only">Loading...</span>
+      </ReactBootStrap.Button>
       <ReactBootStrap.NavDropdown title="In Progress" id="basic-nav-dropdown">
         <ReactBootStrap.NavDropdown.Item bg="dark" variant="dark" href="/payment">Payment | </ReactBootStrap.NavDropdown.Item>
         <ReactBootStrap.NavDropdown.Item bg="dark" variant="dark" href="/car">Car | </ReactBootStrap.NavDropdown.Item>
@@ -60,7 +64,6 @@ function App() {
     </ReactBootStrap.Navbar.Collapse>
     </ReactBootStrap.Navbar>
 
-    <Spinner animation="border" variant="primary" />
 
     
     <Router>
