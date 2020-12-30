@@ -20,7 +20,7 @@ h2 {
   margin-right: 35%;
   font-size:50%;
 }
-a {
+a :visited{
   color: rgb(8, 238, 8);
 }
 img {
