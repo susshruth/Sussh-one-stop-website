@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {useForm} from "react-hook-form";
-import './index.css'
+import './css/index.css'
 import { Select, MenuItem } from "@material-ui/core";
 import { Link } from 'react-router-dom';
 
@@ -22,8 +22,6 @@ export default function Logintwo() {
     const [mystate, setState] = useState('');
     const [country, setCountry] = useState('');
 
-    const buttontext="<< login";
-
     const handleChange1 = e => {
       setMyfirstname(e.target.value);
     } ;
@@ -31,7 +29,7 @@ export default function Logintwo() {
       setMylastname(e.target.value);
     } ;
     const handleChange3 = e => {
-      setMyage(e.target.value);
+        setMyage(e.target.value);
     } ;
     const handleChange4 = e => {
       setMyemail(e.target.value);
@@ -57,11 +55,13 @@ export default function Logintwo() {
     const selectCountry = val => {
       setCountry(val);
     } ;
-      const handleSubmit1 = e => {       
+      const handleSubmit1 = () => {       
         alert( " your name : "+ myfirstname + " " + mylastname +"   | your age : "+ myage + "   | your email : " + myemail + "   | your phone : " + myphone + "   | your address : " + myapt + ", " + mystreet + ", " + myzipcode + ", " + mycity + ", " + mystate + ", " + country);
   } ;
     return (
+
         <div>
+                  <title>sush one</title>
         <div>
                     <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="primary"variant="dark">
     <ReactBootStrap.Navbar.Brand href=""><strong>Personal info</strong></ReactBootStrap.Navbar.Brand>
@@ -70,6 +70,14 @@ export default function Logintwo() {
         </div>
         <form id="form3" onSubmit={handleSubmit(handleSubmit1)}><br/><br/><br/>
         <div id="main3"><br/><br/>
+        <ReactBootStrap.Nav className="justify-content-center" activeKey="/info">
+                <ReactBootStrap.Nav.Item>
+                    <ReactBootStrap.Nav.Link  href="/login">login</ReactBootStrap.Nav.Link>
+                </ReactBootStrap.Nav.Item>
+                <ReactBootStrap.Nav.Item>
+                    <ReactBootStrap.Nav.Link  eventKey="disabled" disabled>info</ReactBootStrap.Nav.Link>
+                </ReactBootStrap.Nav.Item>
+            </ReactBootStrap.Nav>
         {/* <h3> hi {myuserid} </h3> */}
 
         <label id="common"><strong>First name :</strong></label>
@@ -124,7 +132,6 @@ export default function Logintwo() {
 
         <button id="submitform1"type="submit">submit</button>
         <button type="reset" id="reset">reset</button><br/><br/>
-      <ReactBootStrap.Button id="link3" href="/login">{buttontext}</ReactBootStrap.Button><br/><br/>
         </div><br/><br/>
         </form>
         </div>

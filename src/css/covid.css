@@ -29,29 +29,23 @@ code {
     /* padding-right: %; */
   }
   #tablecover{
-    /* background-color: greenyellow; */
-    margin: 1%;
-    min-width: 40%;
-    
-    /* background-color: khaki; */
-    padding-left: 38%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   }
   #selectcontainer{
     background-color: rgb(255, 119, 119);
     /* min-width: 0%; */
   }
-  #Confirmed-th{
+  /* #Confirmed-th{
     padding-right: 1%;
   }  
   #Deaths-th{
-    /* padding-left: 15%; */
+    padding-left: 15%;
     text-align: center;
   }
-  #result{
-    /* text-align: center; */
-    padding-left: 38%;
-  }
-  #confirmed-display{
+  /* #confirmed-display{
     text-align: center;
   }
   #recovered-display{
@@ -61,6 +55,10 @@ code {
   #deaths-display{
     padding-left: 14%;
     text-align: center;
+  } */
+  #result{
+    text-align: center;
+    padding-left: 38%;
   }
   #tr-cases{
     /* min-width: 80%; */
@@ -69,7 +67,7 @@ code {
     /* margin-left: 18%; */
     /* margin-right: 80%; */
   }
-  
+   */
   #btn{
     background-color: lightgreen;
     margin-left: 45%;

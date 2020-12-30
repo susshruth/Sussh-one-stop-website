@@ -1,5 +1,5 @@
 import React from 'react';
-import './youtube.css'
+import './css/youtube.css'
 import ReactPlayer from 'react-player';
 
 export default class YoutubeVideo extends React.Component{

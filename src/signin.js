@@ -1,14 +1,16 @@
 import React,{ useState } from 'react';
-import Signin from './signin';
 import {useForm} from "react-hook-form";
 import './css/index.css';
 import * as ReactBootStrap from "react-bootstrap";
 // import { Tab } from '@material-ui/core';
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
 
-export default function Login() {
+
+export default function Signin() {
     const { register, handleSubmit, errors } = useForm();
-    const [myuserid, setMyuserid] = useState('');
-    const [mypassword, setMypassword] = useState('');
+    const [myfirstuserid, setMyuserid] = useState('');
+    const [myfirstpassword, setMypassword] = useState('');
 
     const buttontext="personal info >>"
 
@@ -19,7 +21,7 @@ export default function Login() {
         setMypassword(e.target.value);
     } ;
     const onSubmit = () => {
-        console.log("your userID : " + myuserid + " your password : " + mypassword + Signin.myfirstuserid + Signin.myfirstpassword)
+        console.log("your userID : " + myfirstuserid + " your password : " + myfirstpassword)
       }
     return(
         <div>
@@ -40,11 +42,11 @@ export default function Login() {
                 </ReactBootStrap.Nav.Item>
             </ReactBootStrap.Nav>
                 <label id="Use"><strong>User ID :</strong></label>
-                <input id="Useinput"name="user" placeholder="User id" value={myuserid} onChange={handleChange1} ref={register({ required : true })}></input><br/>
+                <input id="Useinput"name="user" placeholder="User id" value={myfirstuserid} onChange={handleChange1} ref={register({ required : true })}></input><br/>
                 {errors.user && <p>This are a required field</p>}
 
                 <label id="Use"><strong>Password :</strong></label>
-                <input id="pasinput"name="pass" placeholder="Password" value={mypassword} onChange={handleChange2} type="password" ref={register({ required : true, maxLength: 6 })}></input><br/>
+                <input id="pasinput"name="pass" placeholder="Password" value={myfirstpassword} onChange={handleChange2} type="password" ref={register({ required : true, maxLength: 6 })}></input><br/>
                 {errors.pass && <p>This are a required field and the max length is 6</p>}
                 <br/>
 

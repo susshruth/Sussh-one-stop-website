@@ -108,11 +108,14 @@ code {
 
 #main2{
   background-color: white;
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
   border-width: thin;
   border-color: black;
   border-style: solid;
+  display: block;
+  width: 100%;
+  max-width: 40%;
 }
 #link2{
   margin-left: 27%;
@@ -123,13 +126,20 @@ code {
 }
 
 #Useinput{
-  margin-left: 13%;
+  margin-left: 22.5%;
+  display: block;
+  width: 100%;
+  max-width: 55%;
+  /* appearance: none; */
 }
 #pas{
   margin-left: 37%;
 }
 #pasinput{
-  margin-left: 13%;
+  margin-left: 22.5%;
+  display: block;
+  width: 100%;
+  max-width: 55%;
 }
 #submitform{
   margin-left: 40%;

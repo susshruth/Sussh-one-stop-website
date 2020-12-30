@@ -19,6 +19,7 @@ body {
   #myinput{
     margin-left: 42%;
     min-width: 20%;
+    border-radius: 10%;
 }
 #button{
   margin-left: 47%;
@@ -31,7 +32,7 @@ body {
   background-color: white;
   margin-left: 18%;
   margin-right: 18%;
-border-width: 2px;
+  border-width: 2px;
   border-color: black;
 }
 #container{

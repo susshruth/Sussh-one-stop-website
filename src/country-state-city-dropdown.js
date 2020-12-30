@@ -2,7 +2,7 @@ import csc from 'country-state-city'
 import {useForm} from "react-hook-form";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './covid.css';
+import './css/covid.css';
  
 // Import Interfaces`
 import { ICountry, IState, ICity } from 'country-state-city';
@@ -120,22 +120,19 @@ fetchData();
 
 
 <br/><br/>
-<div id="result"> The Covid Cases for <strong> {country}</strong> : </div><br/>
+<div style={{textAlign: "center"}}> The Covid Cases for <strong> {country}</strong> : </div><br/>
 <div id="lastupdate"></div><br/>
 {/* The lastUpdate for <strong> {country}</strong> was in :  */}
 {/* <div id="result"> The Cases :</div><br/> */}
 <div id="tablecover">
-<tr>
-      <th id="Confirmed-th">Confirmed</th><br/>
-      <th id="Recovered-th">Recovered</th><br/>
-      <th id="Deaths-th">Deaths</th><br/>
-    </tr>
-    <tr id="tr-cases">
-
-      <td id="confirmed-display" ></td>
-      <td id="recovered-display" ></td>
+  <tr>
+      <th id="Confirmed-th">Confirmed : </th>
+      <td id="confirmed-display" ></td><br/>
+      <th id="Recovered-th">Recovered : </th>
+      <td id="recovered-display" ></td><br/>
+      <th id="Deaths-th">Deaths : </th>
       <td id="deaths-display"    ></td><br/>
-    </tr><br/>
+  </tr>
 
       <div id="state-display">
       <div id="r1"> The Covid Cases for <strong> {statename}</strong> : </div><br/>

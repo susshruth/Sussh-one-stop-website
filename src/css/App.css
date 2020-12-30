@@ -12,20 +12,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 h2 {
   color: #39dd02;
-  background-color: #4a171b;
+  /* background-color: #4a171b; */
   margin-left: 350px;
   margin-right: 35%;
   font-size:50%;
 }
-a :visited{
-  color: rgb(8, 238, 8);
+a {
+  color: #39dd02;
 }
 img {
   width: 40px;
   height: 40px;
+}
+#Person{
+  width: 40px;
+  height: 40px;
+  border-radius: 60%;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {

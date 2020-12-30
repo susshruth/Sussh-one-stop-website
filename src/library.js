@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';   
-import './library.css';
-import './covid.css';
+import './css/library.css';
+// import './css/covid.css';
 import axios from 'axios'
 
 
